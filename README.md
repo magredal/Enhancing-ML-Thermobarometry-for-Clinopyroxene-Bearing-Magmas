@@ -1,4 +1,4 @@
-# Enhancing-ML-Thermobarometry-for-Clinopyroxene-Bearing-Magmas-.py-module
+# Enhancing-ML-Thermobarometry-for-Clinopyroxene-Bearing-Magmas
 
 Hello and welcome!
 
