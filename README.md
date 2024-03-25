@@ -14,7 +14,7 @@ Inside the folder entitled "ML_PT_Pyworkflow", you will find:
     
     4.datasets folder: Contains the datasets we used through the workflow. You can modify the "Unknowns-template" and put your own values there.
     
-    5.Single_OutPut_Predictor.ipynb: This is the ready-to-apply script. You just need to open it (run the line jupyter lab in your terminal, and a new tab will open in your navigator), and then you can customize the settings (if you want to use a "cpx_only" or "cpx_liquid" model and if you want to estimate "Temperature" or "Pressure"). Run it a get your estimates!
+    5.Single_OutPut_Predictor.ipynb: This is the ready-to-apply script. You just need to open it (run the line jupyter lab in your terminal, and a new tab will open in your navigator), and then you can customize the settings (if you want to use a "cpx_only" or "cpx_liquid" model and if you want to estimate "Temperature" or "Pressure"). Run it and get your estimates!
     
     6.models folder: Contains the pre-trained models.
     
