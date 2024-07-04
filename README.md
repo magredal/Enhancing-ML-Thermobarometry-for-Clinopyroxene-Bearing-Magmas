@@ -22,6 +22,6 @@ Inside the folder entitled "ML_PT_Pyworkflow", you will find:
     
     8.Figures folder: Once you run the "Single_OutPut_Predictor.ipynb" script, you will find your figures here.
 
-If you have any issues, please write to: maurizio.petrelli@unipg.it, monica.agredalopez@studenti.unipg.it
+If you have any issues, please write to: maurizio.petrelli@unipg.it, monica.agredalopez@dottorandi.unipg.it
 
 Distributed under the MIT license.
