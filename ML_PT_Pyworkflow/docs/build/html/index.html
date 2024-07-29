@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ML_PT_Pyworkflow documentation &mdash; ML_PT_Pyworkflow 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=8d563738"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            ML_PT_Pyworkflow
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">ML_PT_Pyworkflow documentation</a></li>
+<li><a class="reference internal" href="#module-ML_PT_Pyworkflow">Module Documentation</a><ul>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.Dataset"><code class="docutils literal notranslate"><span class="pre">Dataset</span></code></a><ul>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.Dataset.ArcPl"><code class="docutils literal notranslate"><span class="pre">Dataset.ArcPl</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.Dataset.Jorgenson"><code class="docutils literal notranslate"><span class="pre">Dataset.Jorgenson</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.Dataset.Test_P"><code class="docutils literal notranslate"><span class="pre">Dataset.Test_P</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.Dataset.Test_T"><code class="docutils literal notranslate"><span class="pre">Dataset.Test_T</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.Dataset.Train_P"><code class="docutils literal notranslate"><span class="pre">Dataset.Train_P</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.Dataset.Train_T"><code class="docutils literal notranslate"><span class="pre">Dataset.Train_T</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.Dataset.Unknowns"><code class="docutils literal notranslate"><span class="pre">Dataset.Unknowns</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.ET_train_validation_balanced"><code class="docutils literal notranslate"><span class="pre">ET_train_validation_balanced()</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.ET_train_validation_balanced_perturbation"><code class="docutils literal notranslate"><span class="pre">ET_train_validation_balanced_perturbation()</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.P_T_predictors"><code class="docutils literal notranslate"><span class="pre">P_T_predictors()</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.Parameters"><code class="docutils literal notranslate"><span class="pre">Parameters</span></code></a><ul>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.Parameters.K_rel_err"><code class="docutils literal notranslate"><span class="pre">Parameters.K_rel_err</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.Parameters.oxide_rel_err"><code class="docutils literal notranslate"><span class="pre">Parameters.oxide_rel_err</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.Parameters.pressure_bins"><code class="docutils literal notranslate"><span class="pre">Parameters.pressure_bins</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.Parameters.temperature_bins"><code class="docutils literal notranslate"><span class="pre">Parameters.temperature_bins</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.balanced_train_test"><code class="docutils literal notranslate"><span class="pre">balanced_train_test()</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.bias_f_line"><code class="docutils literal notranslate"><span class="pre">bias_f_line()</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.bias_f_temp"><code class="docutils literal notranslate"><span class="pre">bias_f_temp()</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.data_imputation"><code class="docutils literal notranslate"><span class="pre">data_imputation()</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.input_perturbation"><code class="docutils literal notranslate"><span class="pre">input_perturbation()</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.max_perc"><code class="docutils literal notranslate"><span class="pre">max_perc()</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.min_perc"><code class="docutils literal notranslate"><span class="pre">min_perc()</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.perturbation"><code class="docutils literal notranslate"><span class="pre">perturbation()</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.piecewise_line"><code class="docutils literal notranslate"><span class="pre">piecewise_line()</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.pwlt_transformation"><code class="docutils literal notranslate"><span class="pre">pwlt_transformation()</span></code></a></li>
+<li><a class="reference internal" href="#ML_PT_Pyworkflow.replace_zeros"><code class="docutils literal notranslate"><span class="pre">replace_zeros()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">ML_PT_Pyworkflow</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">ML_PT_Pyworkflow documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="ml-pt-pyworkflow-documentation">
+<h1>ML_PT_Pyworkflow documentation<a class="headerlink" href="#ml-pt-pyworkflow-documentation" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="module-ML_PT_Pyworkflow">
+<span id="module-documentation"></span><h1>Module Documentation<a class="headerlink" href="#module-ML_PT_Pyworkflow" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.Dataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ML_PT_Pyworkflow.</span></span><span class="sig-name descname"><span class="pre">Dataset</span></span><a class="headerlink" href="#ML_PT_Pyworkflow.Dataset" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.Dataset.ArcPl">
+<span class="sig-name descname"><span class="pre">ArcPl</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'External</span> <span class="pre">test,</span> <span class="pre">Filtered</span> <span class="pre">ArcPl</span> <span class="pre">compilation,</span> <span class="pre">original</span> <span class="pre">data</span> <span class="pre">from:Wieser</span> <span class="pre">et</span> <span class="pre">al.(2023)'</span></em><a class="headerlink" href="#ML_PT_Pyworkflow.Dataset.ArcPl" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.Dataset.Jorgenson">
+<span class="sig-name descname"><span class="pre">Jorgenson</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'dataset</span> <span class="pre">used</span> <span class="pre">for</span> <span class="pre">training</span> <span class="pre">and</span> <span class="pre">testing.'</span></em><a class="headerlink" href="#ML_PT_Pyworkflow.Dataset.Jorgenson" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.Dataset.Test_P">
+<span class="sig-name descname"><span class="pre">Test_P</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Internal</span> <span class="pre">test</span> <span class="pre">(20</span> <span class="pre">%</span> <span class="pre">of</span> <span class="pre">original</span> <span class="pre">dataset)</span> <span class="pre">used</span> <span class="pre">to</span> <span class="pre">evaluate</span> <span class="pre">pressure</span> <span class="pre">estimates</span> <span class="pre">using</span> <span class="pre">cpx</span> <span class="pre">and</span>&#160; <span class="pre">cpx_liquid</span> <span class="pre">models.'</span></em><a class="headerlink" href="#ML_PT_Pyworkflow.Dataset.Test_P" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.Dataset.Test_T">
+<span class="sig-name descname"><span class="pre">Test_T</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'Internal</span> <span class="pre">test</span> <span class="pre">(20</span> <span class="pre">%</span> <span class="pre">of</span> <span class="pre">original</span> <span class="pre">dataset)</span> <span class="pre">used</span> <span class="pre">to</span> <span class="pre">evaluate</span> <span class="pre">temperature</span> <span class="pre">estimates</span> <span class="pre">using</span> <span class="pre">cpx</span> <span class="pre">and</span> <span class="pre">cpx_liquid</span> <span class="pre">models.'</span></em><a class="headerlink" href="#ML_PT_Pyworkflow.Dataset.Test_T" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.Dataset.Train_P">
+<span class="sig-name descname"><span class="pre">Train_P</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'training</span> <span class="pre">dataset</span> <span class="pre">for</span> <span class="pre">cpx</span> <span class="pre">and</span> <span class="pre">cpx_liquid</span> <span class="pre">barometers'</span></em><a class="headerlink" href="#ML_PT_Pyworkflow.Dataset.Train_P" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.Dataset.Train_T">
+<span class="sig-name descname"><span class="pre">Train_T</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'training</span> <span class="pre">dataset</span> <span class="pre">for</span> <span class="pre">cpx</span> <span class="pre">and</span> <span class="pre">cpx_liquid</span> <span class="pre">thermometer</span> <span class="pre">models.'</span></em><a class="headerlink" href="#ML_PT_Pyworkflow.Dataset.Train_T" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.Dataset.Unknowns">
+<span class="sig-name descname"><span class="pre">Unknowns</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'The</span> <span class="pre">user</span> <span class="pre">unknowns'</span></em><a class="headerlink" href="#ML_PT_Pyworkflow.Dataset.Unknowns" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.ET_train_validation_balanced">
+<span class="sig-prename descclassname"><span class="pre">ML_PT_Pyworkflow.</span></span><span class="sig-name descname"><span class="pre">ET_train_validation_balanced</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bins</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k_fold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_estimators</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">200</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_depth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pwlt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ML_PT_Pyworkflow.ET_train_validation_balanced" title="Link to this definition"></a></dt>
+<dd><p>Cross-validation process for Extra-Trees. It can manage unbalanced data as output</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>X_train (numpy.array 2D): Input dataset.
+y_train (np.array 1D): Output dataset.
+bins (np.array 1D): index of dependent samples</p>
+</dd>
+<dt>Returns:</dt><dd><p>model: model trained
+total_score_avg (np.float): score from cross-validation</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.ET_train_validation_balanced_perturbation">
+<span class="sig-prename descclassname"><span class="pre">ML_PT_Pyworkflow.</span></span><span class="sig-name descname"><span class="pre">ET_train_validation_balanced_perturbation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">std_dev_perc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bins</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k_fold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_estimators</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">200</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_depth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_perturbations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pwlt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ML_PT_Pyworkflow.ET_train_validation_balanced_perturbation" title="Link to this definition"></a></dt>
+<dd><p>Cross validation process for Extra-Trees. It can manage unbalanced data as
+output and dependencies between the input samples generated via data augmentation</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>X_train (numpy.array 2D): Input dataset.
+y_train (np.array 1D): Output dataset.
+bins (np.array 1D): index of dependent samples
+std_dev_perc (np.array 1D, or np.array 2D): standard deviation percentage.
+If you upload a 1D-array, all new samples are based on the same standard
+deviation, if you upload a 2D-array, new samples comes from different
+standard deviations.</p>
+</dd>
+<dt>Returns:</dt><dd><p>model: model trained
+total_score_avg (np.float): score from cross-validation</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.P_T_predictors">
+<span class="sig-prename descclassname"><span class="pre">ML_PT_Pyworkflow.</span></span><span class="sig-name descname"><span class="pre">P_T_predictors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ML_PT_Pyworkflow.P_T_predictors" title="Link to this definition"></a></dt>
+<dd><p>Upload model for the entire pipeline: scaler, main model and bias function.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>output (string): ‘Pressure’ or ‘Temperature’.
+model (string): ‘cpx_only’ or ‘cpx_liquid’.</p>
+</dd>
+<dt>Returns:</dt><dd><p>scaler (.joblib): scaler
+predictor (.onnx): main model
+bias_json (.json): parameters for the bias model.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.Parameters">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">ML_PT_Pyworkflow.</span></span><span class="sig-name descname"><span class="pre">Parameters</span></span><a class="headerlink" href="#ML_PT_Pyworkflow.Parameters" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p># Relative errors (percentage. 3% for measurm. &gt;1wt% and 8% for measurm. &lt;1wt.%)
+‘SiO2’   : 0.03,  
+‘TiO2’   : 0.08,
+‘Al2O3’  : 0.03,
+‘FeO’    : 0.03,
+‘MgO’    : 0.03,
+‘MnO’    : 0.08,
+‘CaO’    : 0.03,
+‘Na2O’   : 0.08,
+‘Cr2O3’  : 0.08,
+‘k2O_Liq’: 0.08</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.Parameters.K_rel_err">
+<span class="sig-name descname"><span class="pre">K_rel_err</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">array([0.08])</span></em><a class="headerlink" href="#ML_PT_Pyworkflow.Parameters.K_rel_err" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.Parameters.oxide_rel_err">
+<span class="sig-name descname"><span class="pre">oxide_rel_err</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">array([0.03,</span> <span class="pre">0.08,</span> <span class="pre">0.03,</span> <span class="pre">0.03,</span> <span class="pre">0.03,</span> <span class="pre">0.08,</span> <span class="pre">0.03,</span> <span class="pre">0.08,</span> <span class="pre">0.08])</span></em><a class="headerlink" href="#ML_PT_Pyworkflow.Parameters.oxide_rel_err" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.Parameters.pressure_bins">
+<span class="sig-name descname"><span class="pre">pressure_bins</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[0,</span> <span class="pre">5,</span> <span class="pre">10,</span> <span class="pre">15,</span> <span class="pre">20,</span> <span class="pre">25,</span> <span class="pre">30]</span></em><a class="headerlink" href="#ML_PT_Pyworkflow.Parameters.pressure_bins" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.Parameters.temperature_bins">
+<span class="sig-name descname"><span class="pre">temperature_bins</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[600,</span> <span class="pre">1050,</span> <span class="pre">1140,</span> <span class="pre">1250,</span> <span class="pre">1800]</span></em><a class="headerlink" href="#ML_PT_Pyworkflow.Parameters.temperature_bins" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.balanced_train_test">
+<span class="sig-prename descclassname"><span class="pre">ML_PT_Pyworkflow.</span></span><span class="sig-name descname"><span class="pre">balanced_train_test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bins</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sample_names</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ML_PT_Pyworkflow.balanced_train_test" title="Link to this definition"></a></dt>
+<dd><p>Train-test split to manage unbalanced output and dependent samples.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>X (numpy.array 2D): Input dataset.
+y (np.array 1D): Output dataset.
+bins (np.array 1D): index of dependent samples
+test_size (int)
+sample_names (list 1D)</p>
+</dd>
+<dt>Returns: </dt><dd><p>X_train (numpy.array 2D): Input dataset for training.
+X_test (np.array 2D): Input dataset for test.
+y_train (numpy.array 1D): Output dataset for training.
+y_test (np.array 1D): Output dataset for test.
+train_index (np.array 1D): Index for training.
+test_index (np.array 1D): Index for test.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.bias_f_line">
+<span class="sig-prename descclassname"><span class="pre">ML_PT_Pyworkflow.</span></span><span class="sig-name descname"><span class="pre">bias_f_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ML_PT_Pyworkflow.bias_f_line" title="Link to this definition"></a></dt>
+<dd><p>half-line function</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.bias_f_temp">
+<span class="sig-prename descclassname"><span class="pre">ML_PT_Pyworkflow.</span></span><span class="sig-name descname"><span class="pre">bias_f_temp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ang_left</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">popt_left</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ang_right</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">popt_right</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ML_PT_Pyworkflow.bias_f_temp" title="Link to this definition"></a></dt>
+<dd><p>Piece-wise function</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.data_imputation">
+<span class="sig-prename descclassname"><span class="pre">ML_PT_Pyworkflow.</span></span><span class="sig-name descname"><span class="pre">data_imputation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataFrame</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ML_PT_Pyworkflow.data_imputation" title="Link to this definition"></a></dt>
+<dd><p>Fill Nan values with 0.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>dataFrame (pandas.DataFrame): dataset  to modify.</p>
+</dd>
+<dt>Returns:</dt><dd><p>pandas.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.input_perturbation">
+<span class="sig-prename descclassname"><span class="pre">ML_PT_Pyworkflow.</span></span><span class="sig-name descname"><span class="pre">input_perturbation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">std_dev_perc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_perturbations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ML_PT_Pyworkflow.input_perturbation" title="Link to this definition"></a></dt>
+<dd><p>Data augmentation picking new elements from a Gaussian distribution with mean
+‘value of each original sample’ and standard deviation ‘std_dev_perc’. Useful
+for the prediction phase because we are not managing the output.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>X (numpy.array 2D): Input dataset.
+std_dev_perc (np.array 1D, or np.array 2D): standard deviation percentage.
+If you upload a 1D-array, all new samples are based on the same standard
+deviation, samples comes from different standard deviations.
+n_perturbations (int): numbers of elements to create from each row of X.</p>
+</dd>
+<dt>Returns:</dt><dd><p>X_perturb (np.array 2D): Input dataset augmented
+groups (np.array 1D): index of samples with the same origin</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.max_perc">
+<span class="sig-prename descclassname"><span class="pre">ML_PT_Pyworkflow.</span></span><span class="sig-name descname"><span class="pre">max_perc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ML_PT_Pyworkflow.max_perc" title="Link to this definition"></a></dt>
+<dd><p>84-th percentile.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>x (np.array): Array to define 84-th percentile.</p>
+</dd>
+<dt>Returns:</dt><dd><p>np.array (1D)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.min_perc">
+<span class="sig-prename descclassname"><span class="pre">ML_PT_Pyworkflow.</span></span><span class="sig-name descname"><span class="pre">min_perc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ML_PT_Pyworkflow.min_perc" title="Link to this definition"></a></dt>
+<dd><p>16-th percentile.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>x (np.array): Array to define 16-th percentile.</p>
+</dd>
+<dt>Returns:</dt><dd><p>np.array (1D)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.perturbation">
+<span class="sig-prename descclassname"><span class="pre">ML_PT_Pyworkflow.</span></span><span class="sig-name descname"><span class="pre">perturbation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">std_dev_perc</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_perturbations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">15</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ML_PT_Pyworkflow.perturbation" title="Link to this definition"></a></dt>
+<dd><p>Data augmentation picking new elements from a Gaussian distribution with mean
+‘value of each original sample’ and standard deviation ‘std_dev_perc’. Useful
+for the training and testing phases because we are managing the output.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>X (numpy.array 2D): Input dataset.
+y (np.array 1D): Output dataset.
+std_dev_perc (np.array 1D, or np.array 2D): standard deviation percentage.
+If you upload a 1D-array, all new samples are based on the same standard
+deviation, if you upload a 2D-array, new samples come from different
+standard deviations.
+n_perturbations (int): numbers of elements to create from each row of X.</p>
+</dd>
+<dt>Returns:</dt><dd><p>X_perturb (np.array 2D): Input dataset augmented
+y_rep (np.array 1D): Output dataset augmented
+groups (np.array 1D): index of samples with the same origin</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.piecewise_line">
+<span class="sig-prename descclassname"><span class="pre">ML_PT_Pyworkflow.</span></span><span class="sig-name descname"><span class="pre">piecewise_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bias_split</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ML_PT_Pyworkflow.piecewise_line" title="Link to this definition"></a></dt>
+<dd><p>Piece-wise function fit on training dataset. It can manage model bias.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.pwlt_transformation">
+<span class="sig-prename descclassname"><span class="pre">ML_PT_Pyworkflow.</span></span><span class="sig-name descname"><span class="pre">pwlt_transformation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ML_PT_Pyworkflow.pwlt_transformation" title="Link to this definition"></a></dt>
+<dd><p>Pairwise Log-ratio transformation.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>X (np.array 2D): Dataset to transform.</p>
+</dd>
+<dt>Returns:</dt><dd><p>np.array (2D)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="ML_PT_Pyworkflow.replace_zeros">
+<span class="sig-prename descclassname"><span class="pre">ML_PT_Pyworkflow.</span></span><span class="sig-name descname"><span class="pre">replace_zeros</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#ML_PT_Pyworkflow.replace_zeros" title="Link to this definition"></a></dt>
+<dd><p>Replace 0 values in a series with a random value from 0 to min of a series.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>dataFrame (pandas.DataFrame): dataset to modify.
+column_name (string): column name of the dataset to modify.</p>
+</dd>
+<dt>Returns:</dt><dd><p>pandas.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Agreda-Lopez et al (2024).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
