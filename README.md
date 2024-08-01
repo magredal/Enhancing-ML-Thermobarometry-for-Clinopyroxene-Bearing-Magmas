@@ -4,7 +4,8 @@ Hello and welcome!
 
 This is the series of codes used to calibrate and test the different results from the enhanced clinopyroxene (cpx) and clinoyroxene-liquid (cpx-liq) thermo-barometers presented in the manuscript "Enhancing Machine Learning Thermobarometry for Clinopyroxene-Bearing Magmas", submitted to the Computers and Geosciences journal.
 
-link to the web app: https://ml-cpx-thermobarometry.streamlit.app
+Link to the web app: https://ml-cpx-thermobarometry.streamlit.app
+
 Documentation: https://enhancing-ml-thermobarometry-for-clinopyroxene-bearing-magmas.readthedocs.io/en/latest/
 
 Inside the folder entitled "ML_PT_Pyworkflow", you will find: 
