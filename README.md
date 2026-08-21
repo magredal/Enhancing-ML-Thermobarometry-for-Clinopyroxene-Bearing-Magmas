@@ -2,11 +2,13 @@
 
 Hello and welcome!
 
-This is the series of codes used to calibrate and test the different results from the enhanced clinopyroxene (cpx) and clinoyroxene-liquid (cpx-liq) thermo-barometers presented in the manuscript "Enhancing Machine Learning Thermobarometry for Clinopyroxene-Bearing Magmas", submitted to the Computers and Geosciences journal.
+This is the series of codes used to calibrate and test the different results from the enhanced clinopyroxene (cpx) and clinoyroxene-liquid (cpx-liq) thermo-barometers presented in the manuscript "Enhancing Machine Learning Thermobarometry for Clinopyroxene-Bearing Magmas", published in the journal Computers and Geosciences, https://doi.org/10.1016/j.cageo.2024.105707
 
 Link to the web app: https://ml-cpx-thermobarometry.streamlit.app
 
 Documentation: https://enhancing-ml-thermobarometry-for-clinopyroxene-bearing-magmas.readthedocs.io/en/latest/
+
+Python requirement: This workflow was developed and tested with Python 3.11.5. Using this version is recommended to ensure compatibility with the package versions specified in requirements.txt and reproducibility of the results reported in the manuscript.
 
 Inside the folder entitled "ML_PT_Pyworkflow", you will find: 
 
@@ -26,6 +28,6 @@ Inside the folder entitled "ML_PT_Pyworkflow", you will find:
     
     8.Figures folder: Once you run the "Single_OutPut_Predictor.ipynb" script, you will find your figures here.
 
-If you have any issues, please write to: maurizio.petrelli@unipg.it, monica.agredalopez@dottorandi.unipg.it
+If you have any issues, please write to: monica.agredalopez@unipg.it, maurizio.petrelli@unipg.it 
 
 Distributed under the MIT license.
